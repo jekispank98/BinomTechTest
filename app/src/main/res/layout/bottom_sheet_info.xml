@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+<!--    app:behavior_hideable="true"-->
+<!--    app:behavior_peekHeight="80dp"-->
+<!--    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_medium"
+        android:src="@drawable/avatar_sample" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/person_name"
+            style="@style/TextAppearance.Material3.TitleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/size_medium"
+            android:layout_marginStart="@dimen/size_medium"
+            android:text="@string/sample_name" />
+
+        <LinearLayout
+            android:id="@+id/person_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/signal_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/size_small"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/size_medium"
+                app:drawableStartCompat="@drawable/ic_wifi"
+                android:text="@string/sample_network" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/size_small"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/size_medium"
+                app:drawableStartCompat="@drawable/ic_calendar"
+                android:text="@string/sample_date" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/size_small"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/size_medium"
+                app:drawableStartCompat="@drawable/ic_clock"
+                android:text="@string/sample_time" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_show_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/size_medium"
+            android:backgroundTint="#355DFF"
+            android:padding="@dimen/size_xmedium"
+            android:text="@string/display_history"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

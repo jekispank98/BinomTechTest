@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BinomTechTest</string>
+    <!-- Bottom sheet-->
+    <string name="display_history">Посмотреть историю</string>
+    <string name="sample_name">Масяня</string>
+    <string name="sample_network">GPS</string>
+    <string name="sample_date">15.06.2024</string>
+    <string name="sample_time">14:00</string>
+</resources>
